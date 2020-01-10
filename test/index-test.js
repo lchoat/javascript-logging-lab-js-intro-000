@@ -44,3 +44,7 @@ describe('index', () => {
     })
   })
 })
+
+console.log("current_details");
+console.warn("heads up!");
+console.error("action_required");
