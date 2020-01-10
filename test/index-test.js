@@ -32,7 +32,7 @@ describe('index', () => {
       done()
       })
       console.log("log");
-    
+
   })
 
   it('calls console.warn()', done => {
@@ -46,6 +46,6 @@ describe('index', () => {
       done()
         })
       console.warn("warn");
-  
+
   })
 })
