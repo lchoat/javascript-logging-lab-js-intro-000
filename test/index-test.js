@@ -30,8 +30,9 @@ describe('index', () => {
       expect(spy).toHaveBeenCalled('expected console.log to have been called')
       console.log.restore()
       done()
+      })
       console.log("log");
-    })
+    
   })
 
   it('calls console.warn()', done => {
@@ -43,7 +44,8 @@ describe('index', () => {
       expect(spy).toHaveBeenCalled('expected console.warn to have been called')
       console.warn.restore()
       done()
+        })
       console.warn("warn");
-    })
+  
   })
 })
