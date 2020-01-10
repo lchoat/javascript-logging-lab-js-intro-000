@@ -17,7 +17,8 @@ describe('index', () => {
       expect(spy).toHaveBeenCalled('expected console.error to have been called')
       console.error.restore()
       done()
-    })
+      })
+    console.error("error");
   })
 
   it('calls console.log()', done => {
@@ -29,6 +30,7 @@ describe('index', () => {
       expect(spy).toHaveBeenCalled('expected console.log to have been called')
       console.log.restore()
       done()
+      console.log("log");
     })
   })
 
@@ -41,10 +43,11 @@ describe('index', () => {
       expect(spy).toHaveBeenCalled('expected console.warn to have been called')
       console.warn.restore()
       done()
+      console.warn("warn");
     })
   })
 })
 
-console.log("log");
-console.warn("warn");
-console.error("error");
+
+
+
